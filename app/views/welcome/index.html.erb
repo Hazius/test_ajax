@@ -1,0 +1,16 @@
+<div id="div_wrapper">
+	
+	<div id="div_left">		
+		<%= number_field_tag(:text, nil, id: "number_field_1") %>
+		<br>
+		<%= number_field_tag(:text, nil, id: "number_field_2") %>
+		<br>
+		<%= submit_tag("Отправить", id: "submit_send") %>
+	</div>
+
+	<div id="div_right">
+		<h1><div id="div_number_of_request"></div></h1>
+		<div id="div_right_bottom"></div>
+	</div>
+
+</div>

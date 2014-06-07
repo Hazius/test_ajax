@@ -1,0 +1,44 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$gold: #FAA21A;
+$black: #000000;
+
+//отключаемый контур блоков:
+@mixin contour_of_bloсk
+{
+	//outline: 1px solid $gold; 
+}
+
+#div_wrapper {
+	width: 100%;	
+	@include contour_of_bloсk;
+	text-align: center;
+}
+
+#text_field_send {
+	margin: 10px;
+}
+
+#div_left {
+	@include contour_of_bloсk;
+
+	width: 50%;
+	float: left;	
+}
+
+#div_right{
+	@include contour_of_bloсk;
+
+	width: 50%;
+	margin: 0 0 0 50%;
+}
+
+#div_right_bottom {
+	@include contour_of_bloсk;
+
+	overflow: auto;
+	width: 100%;
+	height: 300px;
+}
