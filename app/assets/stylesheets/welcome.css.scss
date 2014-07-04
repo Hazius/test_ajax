@@ -21,6 +21,10 @@ $black: #000000;
 	margin: 10px;
 }
 
+.submit {
+	width: 200px;
+}
+
 #div_left {
 	@include contour_of_bloсk;
 

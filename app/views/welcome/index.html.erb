@@ -1,11 +1,13 @@
 <div id="div_wrapper">
 	
 	<div id="div_left">		
-		<%= number_field_tag(:text, nil, id: "number_field_1") %>
+		<%= number_field_tag(:text, nil, id: "number_field_1", step: 0.1) %>
+		<%= number_field_tag(:text, nil, id: "number_field_2", step: 0.1) %>
 		<br>
-		<%= number_field_tag(:text, nil, id: "number_field_2") %>
+		<%= submit_tag("Сложить", id: "summ_send", class: "submit") %>
 		<br>
-		<%= submit_tag("Отправить", id: "submit_send") %>
+		<%= submit_tag("Вычесть", id: "difference_send", class: "submit") %>
+		<br>		
 	</div>
 
 	<div id="div_right">

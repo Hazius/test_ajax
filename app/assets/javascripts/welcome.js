@@ -1,21 +1,25 @@
+
 $(document).ready(function() 
 {
-	$("#submit_send").click(
-	function()
-	{			
+	$("#summ_send").click(function(){	
+		send_to_server_to_json("summ", "+");
+	});
 
+	$("#difference_send").click(function(){	
+		send_to_server_to_json("difference", "-");	
+	});
+
+	function send_to_server_to_json(p_doing, p_sign){
 		$.post("/send_to_server_to_json", 
-				{ v_number_field_1: $("#number_field_1").val(),
-				  v_number_field_2: $("#number_field_2").val()				  
+				{
+					v_doing: p_doing,
+					v_number_field_1: $("#number_field_1").val(),
+				  	v_number_field_2: $("#number_field_2").val()	
 				},
 				function(data)
-				{   
-    				$("#div_right_bottom").html(data.number_field_1 + " + " + data.number_field_2 + " = " + data.number_field_summ + "<br>" +
-    											data.number_field_1 + " - " + data.number_field_2 + " = " + data.number_field_difference + "<br>" +
-    											data.number_field_1 + " / " + data.number_field_2 + " = " + data.iv_number_field_dividу + "<br>" +
-    											data.number_field_1 + " * " + data.number_field_2 + " = " + data.iv_number_field_multiply + "<br>"
-    										   )
-  				}, "json");	
-		
-	});
+				{
+					$("#div_right_bottom").html(data.number_field_1 + " " + p_sign + " " + data.number_field_2 + " = " + data.result);
+				}, "json");
+	}
+
 });
