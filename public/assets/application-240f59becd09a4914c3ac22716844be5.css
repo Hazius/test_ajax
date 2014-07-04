@@ -1,0 +1,48 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* line 14, /home/pavel/ProjectsRails/test_ajax/app/assets/stylesheets/welcome.css.scss */
+#div_wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 20, /home/pavel/ProjectsRails/test_ajax/app/assets/stylesheets/welcome.css.scss */
+#text_field_send {
+  margin: 10px;
+}
+
+/* line 24, /home/pavel/ProjectsRails/test_ajax/app/assets/stylesheets/welcome.css.scss */
+.submit {
+  width: 200px;
+}
+
+/* line 28, /home/pavel/ProjectsRails/test_ajax/app/assets/stylesheets/welcome.css.scss */
+#div_left {
+  width: 50%;
+  float: left;
+}
+
+/* line 35, /home/pavel/ProjectsRails/test_ajax/app/assets/stylesheets/welcome.css.scss */
+#div_right {
+  width: 50%;
+  margin: 0 0 0 50%;
+}
+
+/* line 42, /home/pavel/ProjectsRails/test_ajax/app/assets/stylesheets/welcome.css.scss */
+#div_right_bottom {
+  overflow: auto;
+  width: 100%;
+  height: 300px;
+}
